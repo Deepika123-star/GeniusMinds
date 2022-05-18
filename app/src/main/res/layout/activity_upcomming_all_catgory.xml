@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UpcommingAllCatgoryActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/neet"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_backMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                android:tint="@color/white"
+                android:visibility="visible">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_categoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Betting Type"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/neet"
+        android:orientation="vertical">
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/btn_liveBetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/newbtnshape"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/_5sdp"
+            android:text="LIVE BETTING(PLAY &amp; WIN UNLIMITED MONEY)"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/btn_geniusBetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/newbtnshape"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/_5sdp"
+            android:text="GENIUS BETTING CONTEST"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/btn_uniqueBetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/newbtnshape"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/_5sdp"
+            android:text="UNIQUE BETTING CONTEST"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/btn_fantasyBetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/newbtnshape"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/_5sdp"
+            android:text="FANTASY BETTING CONTEST"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>

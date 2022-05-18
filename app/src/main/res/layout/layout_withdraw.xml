@@ -1,0 +1,185 @@
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv_first"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="@dimen/_7sdp"
+        card_view:cardMaxElevation="5dp"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Serial No - "
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/greyy"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_seriesNameWithDraw"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:text="With Draw Amount - "
+                    android:textColor="@color/greyy"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_amountWithDraw"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mode - "
+
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/greyy"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_Mode"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+</LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="2"
+       android:layout_marginTop="@dimen/_7sdp"
+
+       android:orientation="horizontal">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Status - "
+               android:fontFamily="@font/roboto"
+               android:textColor="@color/greyy"
+               android:textSize="@dimen/_9sdp"
+               android:textStyle="bold" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tv_statusWithDraw"
+               android:textStyle="bold"
+               android:paddingLeft="@dimen/_10sdp"
+               android:fontFamily="@font/roboto"
+               android:textSize="@dimen/_9sdp"
+               android:textColor="@color/colorBlack"/>
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Date - "
+               android:fontFamily="@font/roboto"
+               android:textColor="@color/greyy"
+               android:textSize="@dimen/_9sdp"
+               android:textStyle="bold" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tv_dateWithDraw"
+               android:textStyle="bold"
+               android:paddingLeft="@dimen/_10sdp"
+               android:fontFamily="@font/roboto"
+               android:textSize="@dimen/_9sdp"
+               android:textColor="@color/colorBlack"/>
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

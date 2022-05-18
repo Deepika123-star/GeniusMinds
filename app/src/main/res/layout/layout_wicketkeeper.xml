@@ -1,0 +1,147 @@
+<RelativeLayout android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:id="@+id/tv_playerImag"
+                    android:src="@drawable/profiles"
+
+                    />
+                <TextView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_teamName"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/_3sdp"
+                    android:textAlignment="center"
+                    android:background="@drawable/textshape"
+                    android:layout_marginTop="-20dp"
+                    android:text="SA"
+                    android:textSize="@dimen/_7sdp"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_playerName"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Q Kock"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_selectBy"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:text="Sel by 26.83%"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/greyy"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_playedLastMatch"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:text="IPL"
+                    android:gravity="center"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/greyy"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_points"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:text="109"
+                    android:layout_gravity="end"
+
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/greyy"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_credit"
+                    android:textStyle="bold"
+                    android:text="10.5"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:id="@+id/tv_serialNumber1"
+                    android:layout_gravity="end"
+                    android:background="@drawable/addshape"
+                    android:src="@drawable/ic_add_black_24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/light_gray"/>
+    </LinearLayout>
+
+</RelativeLayout>

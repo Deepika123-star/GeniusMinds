@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "294575505211",
+    "project_id": "geniusbetting-79074",
+    "storage_bucket": "geniusbetting-79074.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294575505211:android:d357cb59744cc927af411e",
+        "android_client_info": {
+          "package_name": "com.genius.minds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294575505211-nh2fjjq63gusve0v6t0stdnnnqn2qo0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGCr59DJdbjIiatvBY8AeO18-nScqOGGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294575505211-nh2fjjq63gusve0v6t0stdnnnqn2qo0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

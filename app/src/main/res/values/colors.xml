@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E00101</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#525252</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorbottom">#E83838</color>
+    <color name="unselected">#f2f2f2</color>
+    <color name="colorblue">#3F51B5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#65D1C6C6</color>
+    <color name="light_green">#60BF64</color>
+    <color name="green">#109e38</color>
+    <color name="light_orange">#D65E38</color>
+    <color name="sea_green">#002c42</color>
+    <color name="yellow_base">#ffaa01</color>
+    <color name="label">#3c4257</color>
+    <color name="gary_light">#dddddd</color>
+    <color name="gary_lights">#f0eff4</color>
+    <color name="gary_lightss">#f2f2f2</color>
+    <color name="greyy">#727272</color>
+
+    <color name="disabled">#F5F5F5</color>
+    <color name="transferent">#00000000</color>
+    <color name="transparent">#8e030303</color>
+    <color name="color_navback">#333333</color>
+
+</resources>

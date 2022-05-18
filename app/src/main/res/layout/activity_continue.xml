@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ContinueActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/neet"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_backMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                android:tint="@color/white"
+                android:visibility="visible">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_categoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:fontFamily="@font/roboto"
+                android:text="7h 47 m left"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/neet">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gary_light"
+                android:padding="@dimen/_15sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_categoryScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:text="Chose your Caption and wise Caption"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto"
+                    android:text="C gets 2x points,VC get 1.5x points"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:background="@color/gary_lightss"
+                android:padding="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_type"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:text="Type"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/colorBlack"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_points"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="Points"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/colorBlack"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_rate"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        android:text="% c by"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/colorBlack"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_rate"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        android:text="% vc by"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/colorBlack"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/rec_continue"/>
+        </LinearLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/tv_FirstTeamPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/textshape"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="TEAM PREVIEW"
+            android:textAllCaps="true"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/btn_saveTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/textshape"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="SAVE TEAM "
+            android:textAllCaps="true"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

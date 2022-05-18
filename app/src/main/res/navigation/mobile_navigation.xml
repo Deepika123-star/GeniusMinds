@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.genius.minds.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.genius.minds.myprofile.MyProfileFragment"
+        android:label="My Profile"
+        tools:layout="@layout/fragment_myprofile" />
+    <fragment
+        android:id="@+id/nav_balance"
+        android:name="com.genius.minds.wallet.WalletFragment"
+        android:label="My Balance"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/nav_fantasyContest"
+        android:name="com.genius.minds.Fragment.FantasyContestFragment"
+        android:label="Fantasy Contest"
+        tools:layout="@layout/fragment_fantasy_contest" />
+    <fragment
+        android:id="@+id/nav_refer"
+        android:name="com.genius.minds.info.ReferFragment"
+        android:label="Refer and Earn"
+        tools:layout="@layout/fragment_refer" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.genius.minds.info.AboutFragment"
+        android:label="About Company"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.genius.minds.info.HelpFragment"
+        android:label="Help and Support"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/nav_terms"
+        android:name="com.genius.minds.info.TermsFragment"
+        android:label="Terms and Conditions"
+        tools:layout="@layout/fragment_terms" />
+    <fragment
+        android:id="@+id/nav_hindiplay"
+        android:name="com.genius.minds.info.PlayHindiFragment"
+        android:label="How to Play (Hindi)"
+        tools:layout="@layout/fragment_howplayhindi" />
+    <fragment
+        android:id="@+id/nav_englishplay"
+        android:name="com.genius.minds.info.PlayEnglishFragment"
+        android:label="How to Play (English)"
+        tools:layout="@layout/fragment_howplayenglish" />
+    <fragment
+        android:id="@+id/nav_gst"
+        android:name="com.genius.minds.info.GstFragment"
+        android:label="Gst Certificate"
+        tools:layout="@layout/fragment_gst" />
+    <fragment
+        android:id="@+id/nav_certicicate"
+        android:name="com.genius.minds.info.RegistrationFragment"
+        android:label="Registration Certificate"
+        tools:layout="@layout/fragment_registration_certificate" />
+
+
+
+    <fragment
+        android:id="@+id/bottom_home"
+        android:name="com.genius.minds.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/bottom_mycontest"
+        android:name="com.genius.minds.mycontest.MyContestFragment"
+        android:label="My Contest"
+        tools:layout="@layout/fragment_mycontest" />
+
+    <fragment
+        android:id="@+id/bottom_wallet"
+        android:name="com.genius.minds.wallet.WalletFragment"
+        android:label="Wallet"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/bottom_more"
+        android:name="com.genius.minds.more.MoreFragment"
+        android:label="More"
+        tools:layout="@layout/fragment_more" />
+</navigation>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CreateTeamActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/neet"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:padding="10dp"
+            android:id="@+id/line1"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_backMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/white"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_categoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Tender"
+                android:visibility="gone"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/neet">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp"
+                        android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_categoryScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto"
+                        android:text="96 mins left"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/colorBlack"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_FirstTeamScore"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:fontFamily="@font/roboto"
+                            android:layout_weight="1"
+                            android:text="T20 WORLD CUP"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_SecondTeamScore"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="2/3/2022"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_matchDateScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="India Vs Pakistan 1/29/2022"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/colorBlack"/>
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:src="@drawable/karchi"/>
+
+                            <TextView
+                                android:id="@+id/tv_firstTeamNameScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="India"
+                                android:fontFamily="@font/roboto"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="V/S"
+                            android:fontFamily="@font/roboto"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_17sdp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:src="@drawable/islame"/>
+
+                            <TextView
+                                android:id="@+id/tv_lastTeamScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pakistan"
+                                android:fontFamily="@font/roboto"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:text="Players"
+                                android:textColor="@color/light_green"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/tv_player"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_gravity="center"
+                                android:text="0/11"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_13sdp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentEnd="true">
+
+                            <TextView
+                                android:id="@+id/tv_SecondTeamScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
+                                android:text="Credit left"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/light_green"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/tv_SecondTeamScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
+                                android:text="100"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_13sdp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/contest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contest Name : "
+                            android:visibility="gone"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/tv_contestNameScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/contest"
+                            android:text="Cricket"
+                            android:visibility="gone"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                    </LinearLayout>
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabGravity="fill"
+                        app:tabIndicatorHeight="1.5dp"
+                        app:tabMode="fixed"
+                        app:tabIndicatorColor="@color/colorPrimary"
+                        app:tabPaddingBottom="8dp"
+                        app:tabPaddingTop="15dp"
+                        app:tabSelectedTextColor="@color/colorPrimary"
+                        >
+
+                    </com.google.android.material.tabs.TabLayout>
+                    <androidx.viewpager.widget.ViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        android:id="@+id/viewpager1"
+                        android:layout_below="@+id/tabs"
+                        tools:ignore="NotSibling">
+                    </androidx.viewpager.widget.ViewPager>
+
+                </LinearLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/btn_TeamPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/textshape"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="TEAM PREVIEW"
+            android:textAllCaps="true"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/btn_Continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/textshape"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="CONTINUE "
+            android:textAllCaps="true"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

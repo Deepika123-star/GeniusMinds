@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".wallet.UpiPayment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/top"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+
+
+            <EditText
+                android:id="@+id/field_vpa"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="VPA"
+                tools:ignore="Suspicious0dp" />
+
+            <EditText
+                android:id="@+id/field_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textSize="@dimen/_11sdp"
+                android:hint="Payee Name" />
+
+            <EditText
+                android:id="@+id/field_payee_merchant_code"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_height="0dp"
+                android:hint="Payee Merchant Code" />
+
+            <EditText
+                android:id="@+id/field_transaction_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:editable="false"
+                android:visibility="invisible"
+                android:hint="Transaction ID" />
+
+            <EditText
+                android:id="@+id/field_transaction_ref_id"
+                android:layout_width="match_parent"
+                android:focusable="false"
+                android:clickable="false"
+                android:editable="false"
+                android:visibility="invisible"
+                android:layout_height="0dp"
+                android:hint="Transaction Ref ID" />
+
+            <EditText
+                android:id="@+id/field_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"
+                android:textSize="@dimen/_11sdp"
+                android:fontFamily="@font/roboto"
+                android:editable="false"
+                android:text="For adding money in wallet"
+                android:hint="For adding money in wallet" />
+
+            <EditText
+                android:id="@+id/field_amount"
+                android:layout_width="match_parent"
+                android:focusable="false"
+                android:clickable="false"
+                android:editable="false"
+                android:textSize="@dimen/_11sdp"
+                android:fontFamily="@font/roboto"
+                android:layout_height="wrap_content"
+                android:hint="Amount (XX.XX)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto"
+                android:text="Choose UPI App :"
+                android:textColor="#000000"
+                android:textSize="@dimen/_13sdp" />
+
+            <RadioGroup
+                android:id="@+id/radioAppChoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/app_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textSize="@dimen/_11sdp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Default" />
+
+                <RadioButton
+                    android:id="@+id/app_amazonpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_11sdp"
+                    android:text="AmazonPay" />
+
+                <RadioButton
+                    android:id="@+id/app_bhim_upi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_11sdp"
+                    android:text="BHIM UPI" />
+
+                <RadioButton
+                    android:id="@+id/app_google_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_11sdp"
+                    android:text="Google Pay" />
+
+                <RadioButton
+                    android:id="@+id/app_phonepe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_11sdp"
+                    android:text="PhonePe" />
+
+                <RadioButton
+                    android:id="@+id/app_paytm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_11sdp"
+                    android:text="PayTm" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_pay"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/roboto"
+                android:background="@drawable/buttonbackground"
+                android:text="Pay with UPI" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/textView_status"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Click above button to Pay"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homepng"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profilepng"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_balance"
+            android:icon="@drawable/walletpng"
+            android:title="My Balance" />
+        <item
+            android:id="@+id/nav_fantasyContest"
+            android:icon="@drawable/walletpng"
+            android:visible="false"
+            android:title="Fantasy Contest" />
+        <item
+            android:id="@+id/nav_refer"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Refer and Earn" />
+    </group>
+
+    <item android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/nav_hindiplay"
+                android:icon="@drawable/howplay"
+                android:visible="false"
+                android:title="How to Play (Hindi)" />
+            <item
+                android:id="@+id/nav_englishplay"
+                android:icon="@drawable/howplay"
+                android:visible="false"
+                android:title="How to Play (English)" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/termspng"
+                android:title="About Company" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/supportpng"
+                android:title="Help and Support" />
+            <item
+                android:id="@+id/nav_terms"
+                android:icon="@drawable/termspng"
+                android:title="Terms and Conditions" />
+            <item
+                android:id="@+id/nav_gst"
+                android:icon="@drawable/termspng"
+                android:title="Gst Certificate" />
+            <item
+                android:id="@+id/nav_certicicate"
+                android:icon="@drawable/termspng"
+                android:title="Registration Certificate" />
+        </menu>
+    </item>
+
+</menu>

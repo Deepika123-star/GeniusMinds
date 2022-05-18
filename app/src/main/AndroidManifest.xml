@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.genius.minds">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/geniussports"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".mycontest.complete.Activity.CompleteBatingContestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mycontest.live.Activity.LiveBatingContestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mycontest.upcoming.UpcommingContestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mycontest.complete.Activity.CompleteLivebatingMatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mycontest.live.Activity.LivebatingMatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mycontest.upcoming.livebating.UpcommingLivebatingMatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LiveBetting.ShowMyBetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FantasyBetting.FantasyBettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.UniqueBetting.UniqueBettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ScorecardImageContest"
+            android:exported="false" />
+        <activity
+            android:name=".contest.PrizeBreakUpTeamOneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mycontest.complete.Activity.WinningAmountReferalCommissionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RefferalCommssionInEnglsih"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RefferalCommssionInHindi"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RefferalCommissionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PlayUniqueInEnglishiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PlayUniqueInHindiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HowToPlayUniqueBettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ToPlayLiveInEglishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PlayLiveInHindiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HowToPlayLiveBettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HowPlayGeniusInEnglishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HowPlayGeniusInHindiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HowToPlayGeniuseBettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FantasyPlayInEnglishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FantasyPlayInHindiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HowToFantasyPointActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HowToPlayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HowToAddMoneyInHindiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HowToAddMoneyInEnglishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HowToAddMoneyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mycontest.complete.Activity.CompleteAllCatgoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mycontest.live.Activity.LiveAllCatgoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mycontest.live.Activity.NewLiveMatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NewUpcomingMatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.UpcommingAllCatgoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GeniusBettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FantasyContestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AllCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LiveBetting.LiveBettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SelectTeamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TeamPreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ContinueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CreateTeamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.QuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".info.ContestDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".info.UserCommissionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".info.MyRefferalsDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".matches.NewMatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mycontest.complete.Activity.ViewMoreCompleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mycontest.live.Activity.ViewMoreLiveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mycontest.ViewMoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".utills.NotificationList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".wallet.UpiPayment"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider> <!-- Firebase Notifications -->
+        <service android:name=".messanging.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- ./Firebase Notifications -->
+        <activity
+            android:name=".utills.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".more.Playvideo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".more.Addmonwyvideo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".wallet.ScreenshotUpload"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".wallet.BankScreenshot"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".utills.UserLoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".utills.UserRegister"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".utills.OtpConfirm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".more.GstDownload"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".more.Gst"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".utills.ScorecardImage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mycontest.complete.CompleteContest"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mycontest.complete.CompleteSubCategory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mycontest.complete.CompleteMatches"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mycontest.live.LiveContest"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mycontest.live.LiveSubCategory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mycontest.live.LiveMatches"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mycontest.upcoming.UpcomingMatchContest"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mycontest.upcoming.UpcomingSubCategory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mycontest.upcoming.UpcomingMatches"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".utills.ChangePassword" />
+        <activity
+            android:name=".utills.ForgetPass"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".wallet.StartPaymentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".wallet.Transaction"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".utills.Download"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".paymentwithdraw.MobilePayment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".paymentwithdraw.UpiPayment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".paymentwithdraw.BankDetailsUpload"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".wallet.Withdraw"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mycontest.LedgerBoard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".info.EditProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".utills.Webview"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".contest.ConfirmJoining"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".contest.MatchContest"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".subcategory.BettingCategory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".matches.Matches"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".webview.WebViewActivity" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_VMBKUgZVz92Hlz" />
+    </application>
+
+</manifest>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utills.ForgetPass">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Enter your registered mobile number below"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:editable="true"
+                        android:fontFamily="@font/roboto"
+                        android:hint="Enter your Mobile number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:outlineAmbientShadowColor="@color/colorWhite"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/sendbtn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/second"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/buttonbackground"
+                    android:fontFamily="@font/roboto"
+                    android:text="Send Otp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Otp below"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18dp"/>
+            <LinearLayout
+                android:id="@+id/first1"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                >
+
+                <EditText
+                    android:id="@+id/otpnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:background="@null"
+                    android:hint="Enter otp number"
+                    android:outlineAmbientShadowColor="@color/colorWhite"
+                    android:inputType="number"
+                    android:editable="true"
+                    android:maxLength="10"
+                    android:clickable="true"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+                <Button
+                    android:text="Submit"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/first1"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/submit" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

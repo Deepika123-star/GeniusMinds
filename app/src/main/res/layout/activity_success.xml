@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/light_gray"
+    android:layout_height="match_parent"
+    tools:context=".wallet.StartPaymentActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/top"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/phonepay"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="10dp"
+                    android:text="PHONE PAY and GOOGLE PAY NO : \n7800515500"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/upi"
+                    android:layout_below="@id/phonepay"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="BHIM UPI ID : 7800515500@UPI"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/upi"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/roboto"
+                    android:padding="10dp"
+                    android:text="Bank Details : STATE BANK OF INDIA HASANGANJ UP\n NAME : ROHIT KUMAR\n ACCOUNT NO : 20104576363\n IFSC : SBIN0012863\n BRANCH NAME : HASANGANJ "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel">
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Payment Mode"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/rdGroup"
+                    android:layout_below="@id/txt">
+                    <RadioButton
+                        android:id="@+id/edbphonepay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginLeft="20dp"
+                        android:text="Add Money by Phone Pay,Google Pay,Paytm,BHIM UPI,OTHER UPI APP"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbbank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:checked="true"
+                        android:textSize="@dimen/_11sdp"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginLeft="20dp"
+                        android:text="Add Money by Phone Pay,Google Pay,Paytm,BHIM UPI,OTHER UPI APP(OFFLINE MODE)"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/getBtn"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rdGroup"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/buttonbackground"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:text="Proceed"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv_first"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        card_view:cardMaxElevation="5dp"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/_15sdp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_serialNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="S.No."
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/greyy"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_serialNumber1"
+                        android:textStyle="bold"
+                        android:text="1"
+                        android:fontFamily="@font/roboto"
+
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/colorBlack"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_bettingNames"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+
+                        android:text="REFFERAL NAME"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/greyy"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_ReferName"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Hera Mishra"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/colorBlack"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_entryFees"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+
+                        android:text="MOBILE. NUMBER."
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/greyy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_mobileNumber"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto"
+
+                        android:layout_gravity="center"
+
+                        android:text="8318199571"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/colorBlack"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_rates"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto"
+
+                        android:text="JOINING DATE"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/greyy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_joiningDate"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto"
+
+                        android:text="2/1/2022"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/colorBlack"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_priceMoneys"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+
+                        android:text="USER COMMISSION"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/greyy"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:id="@+id/tv_userCommission"
+                        android:textStyle="bold"
+                        android:background="@drawable/buttonbackground"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="User Commission"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/white"/>
+
+                    <View
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:background="@color/light_green"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="1dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

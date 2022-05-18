@@ -1,0 +1,394 @@
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv_first"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        card_view:cardMaxElevation="5dp"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category Name"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/greyy"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_categoryNameRefer"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/colorBlack"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:text="Series Name"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/greyy"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_seriesNameRefer"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Section"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/greyy"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_sectionRefer"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/colorBlack"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:text="SubCategory"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/greyy"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_subCategoryRefer"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contest Name"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/greyy"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_ContestNameRefer"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/colorBlack"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:text="Entry Fee"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/greyy"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_entryFeeRefer"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Refferal Name &amp; mobile"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/greyy"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ReferNameAndMobile"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/ll_winningAmount"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Winning Amount"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/greyy"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ReferWinningAmount"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                android:id="@+id/ll_entryFeeMyMyCommissionAmount1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entry Fee MyCommission Amount"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/greyy"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_entryFeeMyMyCommissionAmount1"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                android:id="@+id/ll_refferalWinningAmountMyCommission2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Refferal Winning Amount My Commission"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/greyy"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_userReferCommission"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/greyy"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_ReferDate"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/colorBlack"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:text="Time"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/greyy"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_TimeRefer"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

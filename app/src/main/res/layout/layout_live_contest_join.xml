@@ -1,0 +1,387 @@
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rel"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@drawable/contestbackground"
+    android:layout_marginBottom="4dp"
+    android:padding="10dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <LinearLayout
+            android:id="@+id/lincontest"
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="100"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/contestname"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="This is test Contest Name"
+                    android:layout_marginBottom="15dp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/lintimer"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:visibility="gone"
+            android:layout_below="@+id/lincontest"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/timer"
+                android:layout_weight="50"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/roboto"
+                android:textSize="@dimen/_11sdp"
+                android:layout_below="@id/date"
+                android:text="djfsdjfsjfdsfsf"/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:layout_height="wrap_content"
+                android:text="12/07/2020"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/dummylin"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_below="@+id/lintimer"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/fill1"
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="50"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="@dimen/_11sdp"
+                android:background="#EFE8E8"/>
+            <TextView
+                android:id="@+id/fill2"
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="50"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto"
+                android:textAlignment="center"
+                android:textSize="@dimen/_11sdp"
+                android:background="#EFE8E8"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/spot"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_below="@+id/dummylin"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/remainspot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="2dp"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/colorPrimary"
+                android:text=""/>
+            <TextView
+                android:id="@+id/totalspot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:fontFamily="@font/roboto"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/colorPrimary"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_prize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spot"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_seriesNameLive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_dateLive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_prize"
+            android:layout_marginTop="10dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/team1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contesttext"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Join for Virat Kohli"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fTeamRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Rate : 200"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/fTeamEnterAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_first_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:text="Contest is Lock"
+                    android:textColor="@android:color/black"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_teamOneWinningAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+                <com.skydoves.elasticviews.ElasticButton
+                    android:id="@+id/fTeamJoinButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+
+                    android:background="@drawable/buttonbackground"
+                    android:fontFamily="@font/roboto"
+                    android:text="Join"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="vs"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/team2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contesttext"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center_horizontal"
+                    android:text="Join for Team 2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sTeamRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto"
+
+                    android:text="Rate :1,5"
+                    android:textColor="@color/colorblue"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/sTeamEnterAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:textColor="@color/colorblue"
+                    android:textColorHint="@color/colorblue"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_second_lock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="1dp"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:drawableTint="@android:color/black"
+                    android:text="Contest is Lock"
+                    android:textColor="@android:color/black"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_teamTwoWinningAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/colorblue"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold" />
+
+
+                <com.skydoves.elasticviews.ElasticButton
+                    android:id="@+id/sTeamJoinButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/buttonbackground"
+                    android:fontFamily="@font/roboto"
+                    android:text="Join"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/el_showMyBet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_all"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="Show My Bet"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

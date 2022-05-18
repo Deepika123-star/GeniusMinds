@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/ic_home_"
+        android:iconTint="@color/colorWhite"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/bottom_mycontest"
+        android:icon="@drawable/ic_my"
+        android:iconTint="@color/colorWhite"
+        android:title="My Contest" />
+
+    <item
+        android:id="@+id/bottom_wallet"
+        android:icon="@drawable/ic_account"
+        android:iconTint="@color/colorWhite"
+        android:title="Wallet" />
+    <item
+        android:id="@+id/bottom_more"
+        android:icon="@drawable/ic_more"
+        android:iconTint="@color/colorWhite"
+        android:title="More" />
+
+</menu>

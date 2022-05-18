@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_all_category.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_bank_details_upload.xml" value="0.13541666666666666" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_betting_category.xml" value="0.12916666666666668" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_complete_all_catgory.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_complete_contest.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_complete_livebating_match.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_complete_matches.xml" value="0.17447916666666666" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_complete_sub_category.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_create_team.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_fantasy_betting.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_ledger_board.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_live_bating_contest.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_live_betting.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_live_subcategory.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_main.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_match_contest.xml" value="0.12916666666666668" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_matches.xml" value="0.12916666666666668" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_new_match.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_show_my_bet.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_upcoming_match_contest.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_upcoming_matches.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_upcoming_sub_category.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_upcomming_all_catgory.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_upcomming_livebating_match.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/activity_web_view.xml" value="0.13913496612819176" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/app_bar_main.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/card_contest_join.xml" value="0.2" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/card_contest_live.xml" value="0.12916666666666668" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/card_contest_upcoming.xml" value="0.22" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/card_legerboard.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/card_match.xml" value="0.12916666666666668" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/card_subcategory.xml" value="0.12916666666666668" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/complete_card_category.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/complete_card_match.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/complete_card_subcategory.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/confirmdialog.xml" value="0.17395833333333333" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/content_main.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/fragment_all_rounder.xml" value="0.25" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/fragment_home.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/fragment_join_contest.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/fragment_live_category.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/fragment_mycontest.xml" value="0.14375" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/fragment_wallet.xml" value="0.22" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/fragment_winning_amount.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/layout_completewinngamount.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/layout_homecategory.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/layout_live_contest_join.xml" value="0.33" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/layout_livebetting.xml" value="0.16822916666666668" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/layout_newcardmatch.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/layout_newlivebetting.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/layout_showmybet.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/layout_winningamounthistory.xml" value="0.33" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/live_card_category.xml" value="0.15416666666666667" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/live_card_match.xml" value="0.15416666666666667" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/upcoming_card_category.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/upcoming_card_match.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/layout/upcoming_card_subcategory.xml" value="0.1921875" />
+        <entry key="..\:/WProject150422/GeniusMinds (1)/geniusbetting/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1921875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
